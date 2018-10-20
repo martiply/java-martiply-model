@@ -1,6 +1,6 @@
 package com.martiply.model.interfaces;
 
-public interface IStore<T> {
+public interface IStore {
 
     public int getStoreId();
 
