@@ -2,7 +2,7 @@ package com.martiply.model.interfaces;
 
 import java.util.List;
 
-public interface MtpResponseI<T>  {
+public interface IMtpResponse<T>  {
 
     public void setSuccess(boolean success);
 

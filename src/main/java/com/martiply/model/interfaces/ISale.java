@@ -1,6 +1,6 @@
 package com.martiply.model.interfaces;
 
-public interface SaleI {
+public interface ISale {
 
     public void setId(String id);
     public String getId();

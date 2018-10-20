@@ -1,8 +1,6 @@
 package com.martiply.model.interfaces;
 
-public interface StoreI<T> {
-
-
+public interface IStore<T> {
 
     public int getStoreId();
 
@@ -60,9 +58,9 @@ public interface StoreI<T> {
 
     public void setCity(String city);
 
-    public ImgI getImg();
+    public IImg getImg();
 
-    public void setImg(ImgI img);
+    public void setImg(IImg img);
 
     public String getEmail();
 

@@ -2,7 +2,7 @@ package com.martiply.model.interfaces;
 
 import java.util.List;
 
-public interface ImgI<T> {
+public interface IImg<T> {
 
     public List<String> getUrls();
 

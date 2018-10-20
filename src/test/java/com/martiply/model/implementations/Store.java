@@ -1,9 +1,9 @@
 package com.martiply.model.implementations;
 
-import com.martiply.model.interfaces.ImgI;
-import com.martiply.model.interfaces.StoreI;
+import com.martiply.model.interfaces.IImg;
+import com.martiply.model.interfaces.IStore;
 
-public class Store implements StoreI {
+public class Store implements IStore {
 
     private int storeId;
     private String name;
@@ -136,11 +136,11 @@ public class Store implements StoreI {
         this.city = city;
     }
 
-    public ImgI getImg() {
+    public IImg getImg() {
         return img;
     }
 
-    public void setImg(ImgI img) {
+    public void setImg(IImg img) {
         this.img = (Img) img;
     }
 

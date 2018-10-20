@@ -27,8 +27,8 @@ public class ApparelExtensionTest  {
 
         Type collectionType = new TypeToken<ApparelExtension>(){}.getType();
         ApparelExtension res = gson.fromJson(json, collectionType);
-        assertNotEquals(res.getGender(), ApparelExtensionI.Gender.female);
-        assertEquals(res.getGender(), ApparelExtensionI.Gender.male);
-        assertEquals(res.getAge(), ApparelExtensionI.Age.children);
+        assertNotEquals(res.getGender(), IApparelExtension.Gender.female);
+        assertEquals(res.getGender(), IApparelExtension.Gender.male);
+        assertEquals(res.getAge(), IApparelExtension.Age.children);
     }
 }

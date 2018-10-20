@@ -1,6 +1,6 @@
 package com.martiply.model.interfaces;
 
-public interface ItemI {
+public interface IItem {
 
     public static enum IdType {
         gtin,
@@ -47,16 +47,16 @@ public interface ItemI {
     public void setCondition(String condition);
     public String getCondition();
 
-    public void setApparelExtension(ApparelExtensionI apparelExtension);
-    public ApparelExtensionI getApparelExtension();
+    public void setApparelExtension(IApparelExtension apparelExtension);
+    public IApparelExtension getApparelExtension();
 
     public void setUrl(String url);
     public String getUrl();
 
-    public void setSale(SaleI sale);
-    public SaleI getSale();
+    public void setSale(ISale sale);
+    public ISale getSale();
 
-    public void setImg(ImgI img);
-    public ImgI getImg();
+    public void setImg(IImg img);
+    public IImg getImg();
 
 }

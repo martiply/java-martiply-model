@@ -1,6 +1,6 @@
 package com.martiply.model.interfaces;
 
-public interface ApparelExtensionI {
+public interface IApparelExtension {
 
     public static enum Gender {
         male,

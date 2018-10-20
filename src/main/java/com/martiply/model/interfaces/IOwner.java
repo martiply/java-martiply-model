@@ -1,6 +1,6 @@
 package com.martiply.model.interfaces;
 
-public interface OwnerI {
+public interface IOwner {
 
     public void setOwnerId(int ownerId);
     public int getOwnerId();

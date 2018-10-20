@@ -1,10 +1,10 @@
 package com.martiply.model.implementations;
 
-import com.martiply.model.interfaces.MtpResponseI;
+import com.martiply.model.interfaces.IMtpResponse;
 
 import java.util.List;
 
-public class MtpResponse<T> implements MtpResponseI {
+public class MtpResponse<T> implements IMtpResponse {
 
     private List<T> data;
 

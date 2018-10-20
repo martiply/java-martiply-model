@@ -1,8 +1,8 @@
 package com.martiply.model.implementations;
 
-import com.martiply.model.interfaces.ApparelExtensionI;
+import com.martiply.model.interfaces.IApparelExtension;
 
-public class ApparelExtension implements ApparelExtensionI {
+public class ApparelExtension implements IApparelExtension {
 
     String id;
     String groupId;
