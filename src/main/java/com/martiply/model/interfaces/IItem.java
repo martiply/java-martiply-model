@@ -14,6 +14,11 @@ public interface IItem {
         all
     }
 
+    public static enum Condition {
+        USED,
+        NEW
+    }
+
     public void setId(String id);
     public String getId();
 
@@ -44,8 +49,8 @@ public interface IItem {
     public void setHits(int hits);
     public int getHits();
 
-    public void setCondition(String condition);
-    public String getCondition();
+    public void setCondition(Condition condition);
+    public Condition getCondition();
 
     public void setApparelExtension(IApparelExtension apparelExtension);
     public IApparelExtension getApparelExtension();

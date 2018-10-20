@@ -13,6 +13,15 @@ public interface IApparelExtension {
         adult
     }
 
+    public static enum SizeSystem {
+        US,
+        UK,
+        EU,
+        CM,
+        SML,
+        ETC
+    }
+
     public void setId(String id);
     public String getId();
 
@@ -25,8 +34,8 @@ public interface IApparelExtension {
     public void setAge(Age age);
     public Age getAge();
 
-    public void setSizeSystem(String sizeSystem);
-    public String getSizeSystem();
+    public void setSizeSystem(SizeSystem sizeSystem);
+    public SizeSystem getSizeSystem();
 
     public void setSize(String size);
     public String getSize();
