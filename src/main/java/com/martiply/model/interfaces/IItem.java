@@ -25,7 +25,7 @@ public interface IItem {
 
     public String getIdCustom();
 
-    public String getGrin();
+    public String getGtin();
 
     public String getDescription();
 
