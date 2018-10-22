@@ -20,7 +20,7 @@ public interface IStore {
 
     public String getClose();
 
-    public float getDistance();
+    public double getDistance();
 
     public String getStory();
 
