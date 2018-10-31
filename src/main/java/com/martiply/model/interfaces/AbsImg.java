@@ -8,6 +8,8 @@ public abstract class AbsImg {
 
     public abstract String getImgHost();
 
+    public abstract Root getRoot();
+
     public static enum Size {
         x,
         h,
