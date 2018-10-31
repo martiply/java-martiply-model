@@ -6,6 +6,8 @@ public abstract class AbsImg {
 
     public abstract List<String> getUrls();
 
+    public abstract String getImgHost();
+
     public static enum Size {
         x,
         h,
@@ -13,7 +15,7 @@ public abstract class AbsImg {
         l
     }
 
-    private static enum Root {
+    public static enum Root {
         i,
         store
     }
@@ -22,9 +24,7 @@ public abstract class AbsImg {
         return buildUrl(host, Root.i, main, size);
     }
 
-    public static String storeUrl(String host, String main, Size size){
-        return buildUrl(host, Root.store, main, size);
-    }
+    public static String storeUrl(String host, String main, Size size){ return buildUrl(host, Root.store, main, size); }
 
     private static String buildUrl(String host, Root root, String main, Size size) {
         StringBuilder sb = new StringBuilder(host);
