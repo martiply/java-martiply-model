@@ -22,23 +22,18 @@ public abstract class AbsImg {
         store
     }
 
-    public static String itemUrl(String host, String main, Size size){
-        return buildUrl(host, Root.i, main, size);
-    }
-
-    public static String storeUrl(String host, String main, Size size){ return buildUrl(host, Root.store, main, size); }
-
-    private static String buildUrl(String host, Root root, String main, Size size) {
-        StringBuilder sb = new StringBuilder(host);
-        if (!host.endsWith("/")){
+    public static String urlOf(AbsImg img, int which, Size size){
+        StringBuilder sb = new StringBuilder(img.getImgHost());
+        if (!img.getImgHost().endsWith("/")){
             sb.append("/");
         }
-        sb.append(root);
+        sb.append(img.getRoot());
         sb.append("/");
-        sb.append(main);
+        sb.append(img.getUrls().get(which));
         sb.append(size);
         sb.append(".jpg");
         return sb.toString();
     }
+
 
 }
