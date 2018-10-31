@@ -30,7 +30,7 @@ public interface IStore {
 
     public String getCity();
 
-    public IImg getImg();
+    public AbsImg getImg();
 
     public String getEmail();
 

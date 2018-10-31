@@ -47,6 +47,6 @@ public interface IItem {
 
     public ISale getSale();
 
-    public IImg getImg();
+    public AbsImg getImg();
 
 }
