@@ -8,8 +8,8 @@ public interface IMtpResponse<T>  {
 
     public String getError();
 
+    public String getImgHost();
+
     public List<T> getData();
-
-    public String imgHost();
-
+    
 }
