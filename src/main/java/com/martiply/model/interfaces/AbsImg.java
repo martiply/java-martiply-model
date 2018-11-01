@@ -11,7 +11,7 @@ public abstract class AbsImg {
     public abstract Root getRoot();
 
     public static enum Size {
-        x,
+        xl,
         h,
         m,
         l
