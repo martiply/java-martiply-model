@@ -23,17 +23,20 @@ public abstract class AbsImg {
     }
 
     public static String urlOf(AbsImg img, int which, Size size){
-        StringBuilder sb = new StringBuilder(img.getImgHost());
-        if (!img.getImgHost().endsWith("/")){
+        return urlOf(img.getImgHost(), img.getRoot(), img.getUrls().get(which), size);
+    }
+
+    public static String urlOf(String host, Root root, String path, Size size){
+        StringBuilder sb = new StringBuilder(host);
+        if (!host.endsWith("/")){
             sb.append("/");
         }
-        sb.append(img.getRoot());
+        sb.append(root);
         sb.append("/");
-        sb.append(img.getUrls().get(which));
+        sb.append(path);
         sb.append(size);
         sb.append(".jpg");
         return sb.toString();
     }
-
 
 }
