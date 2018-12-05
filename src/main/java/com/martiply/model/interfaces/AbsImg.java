@@ -4,7 +4,7 @@ import java.util.List;
 
 public abstract class AbsImg {
 
-    public abstract List<String> getUrls();
+    public abstract List<String> getPaths();
 
     public abstract String getImgHost();
 
@@ -23,7 +23,7 @@ public abstract class AbsImg {
     }
 
     public static String urlOf(AbsImg img, int which, Size size){
-        return urlOf(img.getImgHost(), img.getRoot(), img.getUrls().get(which), size);
+        return urlOf(img.getImgHost(), img.getRoot(), img.getPaths().get(which), size);
     }
 
     public static String urlOf(String host, Root root, String path, Size size){
