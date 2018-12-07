@@ -4,7 +4,7 @@ public interface ISale {
 
     public String getId();
 
-    public float getSalePrice();
+    public String getSalePrice();
 
     public long getSaleStart();
 

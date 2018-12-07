@@ -31,7 +31,7 @@ public interface IItem {
 
     public String getName();
 
-    public float getPrice();
+    public String getPrice();
 
     public Category getCategory();
 
