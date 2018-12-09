@@ -17,7 +17,7 @@ public interface IApparelExtension {
         US,
         UK,
         EU,
-        CM,
+        JP,
         SML,
         ETC
     }
