@@ -8,12 +8,6 @@ public interface IItem {
         custom
     }
 
-    public static enum Category {
-        product,
-        culinary,
-        all
-    }
-
     public static enum Condition {
         USED,
         NEW
@@ -33,7 +27,7 @@ public interface IItem {
 
     public String getPrice();
 
-    public Category getCategory();
+    public String getCategory();
 
     public String getBrand();
 
