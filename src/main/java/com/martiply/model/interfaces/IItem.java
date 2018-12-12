@@ -2,12 +2,6 @@ package com.martiply.model.interfaces;
 
 public interface IItem {
 
-    public static enum IdType {
-        gtin,
-        nogtin,
-        custom
-    }
-
     public static enum Condition {
         USED,
         NEW
@@ -30,8 +24,6 @@ public interface IItem {
     public String getCategory();
 
     public String getBrand();
-
-    public IdType getIdType();
 
     public int getHits();
 
