@@ -5,7 +5,5 @@ import java.util.List;
 public interface IMtpResponse<T>  {
 
     public boolean isSuccess();
-
-    public String getError();
-
+    
 }
